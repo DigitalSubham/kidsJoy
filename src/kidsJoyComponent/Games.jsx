@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const Games = () => {
   const games = [
     { id: "memoryCard", name: `Memory Card`, src: memoryCard },
-    { name: `Tic Tac Toe`, src: tictactoe },
+    { id: "ticTacToe", name: `Tic Tac Toe`, src: tictactoe },
     { name: `Ludo`, src: memoryCard },
     { name: `math`, src: tictactoe },
     { name: `alphabets`, src: memoryCard },

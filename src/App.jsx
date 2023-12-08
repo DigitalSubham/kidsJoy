@@ -1,8 +1,10 @@
 import Games from "./kidsJoyComponent/Games";
 import { createBrowserRouter, Outlet } from "react-router-dom";
-import Cards from "./memoryCardGameComponents/Cards";
 import Navbar from "./kidsJoyComponent/Navbar";
 import Footer from "./kidsJoyComponent/Footer";
+import { lazy, Suspense } from "react";
+const TicTacToe = lazy(() => import("./tictactoeGameComponents/Board"));
+const MemoryCardGame = lazy(() => import("./memoryCardGameComponents/Cards"));
 
 function App() {
   return (
@@ -25,7 +27,19 @@ const AppRouter = createBrowserRouter([
       },
       {
         path: "/fungames/memoryCard",
-        element: <Cards />,
+        element: (
+          <Suspense>
+            <MemoryCardGame />
+          </Suspense>
+        ),
+      },
+      {
+        path: "/fungames/ticTacToe",
+        element: (
+          <Suspense>
+            <TicTacToe />
+          </Suspense>
+        ),
       },
     ],
   },
