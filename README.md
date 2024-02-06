@@ -1,7 +1,6 @@
 # KidsJoy
 
-Welcome to KidsJoy, a delightful platform for children's educational activities and entertainment.
-
+Welcome to KidsJoy, a Awesome platform for children's educational activities and entertainment.
 
 ## Introduction
 
@@ -15,8 +14,6 @@ KidsJoy is a platform designed to provide a fun and educational experience for c
 
 ## Demo
 
- 
-
 ## Technologies Used
 
 - **Frontend:** ReactJs
@@ -26,10 +23,10 @@ KidsJoy is a platform designed to provide a fun and educational experience for c
 
 ## Getting Started
 
-
 ### Installation
 
 1. Clone the repository.
+
    ```
    bash
    git clone https://github.com/DigitalSubham/kidsJoy.git
