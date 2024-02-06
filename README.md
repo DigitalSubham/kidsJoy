@@ -1,7 +1,7 @@
 # KidsJoy
-
 Welcome Welcome to KidsJoy, a delightful platform for children's educational activities and entertainment.
 Welcome kids to KidsJoy, a delightful platform for children's educational activities and entertainment.
+Welcome to KidsJoy, a Awesome platform for children's educational activities and entertainment.
 
 ## Introduction
 
