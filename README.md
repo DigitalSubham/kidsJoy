@@ -11,7 +11,7 @@ KidsJoy is a platform designed to provide a fun and educational experience for c
 - **Colorful Interface:** A visually appealing and child-friendly design for a positive user experience.
 - **Easy Navigation:** Simple and intuitive navigation for kids to explore on their own.
 
-## Demo
+## **[Demo](https://kids-joy.vercel.app/)**
 
 ## Technologies Used
 
