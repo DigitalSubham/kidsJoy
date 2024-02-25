@@ -3,6 +3,8 @@ import { createBrowserRouter, Outlet } from "react-router-dom";
 import Navbar from "./kidsJoyComponent/Navbar";
 import Footer from "./kidsJoyComponent/Footer";
 import { lazy, Suspense } from "react";
+import Error from "./error";
+import Search from "./kidsJoyComponent/Search";
 const TicTacToe = lazy(() => import("./tictactoeGameComponents/Board"));
 const MemoryCardGame = lazy(() => import("./memoryCardGameComponents/Cards"));
 
@@ -40,6 +42,14 @@ const AppRouter = createBrowserRouter([
             <TicTacToe />
           </Suspense>
         ),
+      },
+      {
+        path: "*",
+        element: <Error />,
+      },
+      {
+        path: "/search",
+        element: <Search />,
       },
     ],
   },

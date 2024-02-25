@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes, FaSearch } from "react-icons/fa";
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const links = [
-    { id: 0, link: <FaSearch /> },
-    { id: 1, link: "home" },
-    { id: 2, link: "about" },
-    { id: 3, link: "Games" },
-    { id: 5, link: "contact" },
+    { id: 0, link: "search", name: <FaSearch /> },
+    { id: 1, link: "#", name: "home" },
+    { id: 2, link: "about", name: "about" },
+    { id: 3, link: "games", name: "games" },
+    { id: 5, link: "contact", name: "contact" },
   ];
   return (
     <div className="flex bg-gradient-to-r from-black via-gray-700 to-black justify-between items-center w-full h-20 text-white shadow-lg px-4">
@@ -24,8 +24,8 @@ const Navbar = () => {
             key={link.id}
             className="px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 hover:text-green-300 duration-200"
           >
-            <Link to={link.link} smooth duration={500}>
-              {link.link}
+            <Link to={`/${link.link}`} smooth duration={500}>
+              {link.name}
             </Link>
           </li>
         ))}
@@ -45,11 +45,11 @@ const Navbar = () => {
             >
               <Link
                 onClick={() => setNav(!nav)}
-                to={link.link}
+                to={`/${link.link}`}
                 smooth
                 duration={500}
               >
-                {link.link}
+                {link.name}
               </Link>
             </li>
           ))}
